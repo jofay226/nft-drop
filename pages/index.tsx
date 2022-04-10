@@ -2,6 +2,7 @@ import type { GetServerSideProps, NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
 import {sanityClient, urlFor} from '../sanity'
 import { Collection } from '../typings'
 
@@ -10,6 +11,9 @@ interface Props {
 }
 
 const Home = ({collections}: Props) => {
+
+  
+
   return (
     <div className="max-w-7xl  mx-auto flex flex-col min-h-screen py-20 px-10 2xl:px-0">
       <Head>
